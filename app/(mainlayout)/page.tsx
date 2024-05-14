@@ -1,10 +1,13 @@
 import Banner from "@/components/home/Banner";
+import FeaturedCategories from "@/components/home/FeaturedCategories";
 
 export default function HomePage() {
   return (
     <main>
       <Banner />
-      <h1>Main page here</h1>
+      <div className="max-w-7xl mx-auto">
+        <FeaturedCategories />
+      </div>
     </main>
   );
 }
