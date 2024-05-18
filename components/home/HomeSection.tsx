@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface HomeSectionProps {
@@ -26,7 +27,7 @@ export default function HomeSection({
             {description}
           </h3>
         </div>
-        <a
+        <Link
           href="/products"
           className="hidden md:flex gap-1 text-emerald-700 hover:translate-x-1 hover:text-emerald-600 transition-all"
         >
@@ -46,7 +47,7 @@ export default function HomeSection({
             <path d="M5 12h14"></path>
             <path d="m12 5 7 7-7 7"></path>
           </svg>
-        </a>
+        </Link>
       </div>
       {children}
     </section>

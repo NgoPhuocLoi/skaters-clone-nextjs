@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white py-3">
@@ -31,7 +33,7 @@ export default function Header() {
           </button>
         </div>
         <div className="hidden lg:flex gap-x-8 items-center">
-          <a className="flex space-x-2" href="/">
+          <Link className="flex space-x-2" href="/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -50,7 +52,7 @@ export default function Header() {
             </svg>
             <span className="hidden font-bold lg:inline-block">Skaters</span>
             <span className="sr-only">Home</span>
-          </a>
+          </Link>
           <nav
             aria-label="Main"
             data-orientation="horizontal"
@@ -171,12 +173,12 @@ export default function Header() {
             </svg>
             3
           </button>
-          <a
+          <Link
             className="inline-flex items-center justify-center whitespace-nowrap  text-sm font-medium ring-offset-background  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 before:ease relative overflow-hidden bg-emerald-600 text-white transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-1000 hover:before:-translate-x-40 duration-700 h-9 rounded-full px-3"
             href="/sign-in"
           >
             Sign In<span className="sr-only">Sign In</span>
-          </a>
+          </Link>
         </div>
       </nav>
     </header>

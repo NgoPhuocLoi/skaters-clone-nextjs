@@ -1,16 +1,19 @@
 import Link from "next/link";
 import ProductCard from "../common/ProductCard";
 import HomeSection from "./HomeSection";
+import { fetchPopularProducts } from "@/lib/query/products";
 
-export default function PopularProducts() {
+export default async function PopularProducts() {
+  const popularProducts = await fetchPopularProducts();
+  console.log({ popularProducts });
   return (
     <HomeSection
       title="Popular Products"
       description="Explore all products we offer from around the world"
     >
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {Array.from({ length: 8 }).map((_, index) => (
-          <ProductCard key={index} />
+        {popularProducts.map((product, index) => (
+          <ProductCard product={product} key={index} />
         ))}
       </div>
 

@@ -1,0 +1,62 @@
+{
+  "categories": [
+    {
+      "name": "Clothing",
+      "slug": "clothing"
+    },
+    { "name": "Shoes", "slug": "shoes" },
+    { "name": "Accessories", "slug": "accessories" },
+    { "name": "Bags", "slug": "bags" }
+  ],
+  "products": [
+    {
+      "name": "T-shirt",
+      "slug": "t-shirt",
+      "categoryId": "clothing",
+      "images": [
+        "https://utfs.io/f/deca246d-d67b-467b-9aad-8f08fb9ba679-h2htht.webp",
+        "https://utfs.io/f/9efba5c5-f9cf-4217-bd8b-89215cc1bc7d-h2hths.webp",
+        "https://utfs.io/f/bc079a65-3a6b-4108-8554-09b2ed07486d-h2hthr.webp"
+      ],
+      "price": 20
+    },
+    {
+      "name": "Jeans",
+      "slug": "jeans",
+      "categoryId": "clothing",
+      "images": [
+        "https://utfs.io/f/cbecf880-f8ee-471b-bb32-7e99b8bc75c2-j90m62.webp",
+        "https://utfs.io/f/e7b1935e-e186-4a30-910e-0ca81dbbeeb8-j90m61.webp",
+        "https://utfs.io/f/6fbbe283-9058-4dc8-b247-6166d9b30510-j90m60.webp"
+      ],
+      "price": 50
+    },
+    {
+      "name": "Sneakers",
+      "slug": "sneakers",
+      "categoryId": "shoes",
+      "images": [
+        "https://utfs.io/f/2c1c26fc-5a05-415d-a5bc-c149bd7c082e-6de8wg.webp"
+      ],
+      "price": 80
+    },
+    {
+      "name": "Hat",
+      "slug": "hat",
+      "categoryId": "accessories",
+      "images": [
+        "https://utfs.io/f/a80d56d2-d6f4-4f1b-94cf-a4f9eb8e9bcd-27iz.jpeg"
+      ],
+      "price": 10
+    },
+    {
+      "name": "Backpack",
+      "slug": "backpack",
+      "categoryId": "bags",
+      "images": [
+        "https://utfs.io/f/667c64ca-d7c4-463b-b862-6da4c2a5dc37-z2p1xb.webp"
+      ],
+      "price": 40
+    }
+  ]
+}
