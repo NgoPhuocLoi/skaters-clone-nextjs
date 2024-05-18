@@ -1,8 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        domains: ['skaters-inifarhan.vercel.app'],
-    }
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "skaters-inifarhan.vercel.app",
+        port: "",
+        pathname: "/**",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
