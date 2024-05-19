@@ -39,3 +39,18 @@ export async function fetchProductById(id: string) {
     throw new Error("Failed to fetch product by id.");
   }
 }
+
+export async function fetchProductsByCategory(categoryId: string) {}
+
+export async function countProductByCategory(categoryId: string) {
+  try {
+    const result = await sql<{ count: number }>`
+      SELECT COUNT(*) FROM products WHERE category_id = ${categoryId}
+    `;
+
+    return result.rows[0].count;
+  } catch (error) {
+    console.error("Database Error:", error);
+    throw new Error("Failed to count product by category.");
+  }
+}
